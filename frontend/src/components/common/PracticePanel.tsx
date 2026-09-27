@@ -1,5 +1,10 @@
-import { StatusBadge } from "./StatusBadge";
+import type { ReactNode } from "react";
 
-export function PracticePanel({ title = "PracticePanel", value = "READY" }: { title?: string; value?: string }) {
-  return <div className="shared-widget"><strong>{title}</strong><StatusBadge value={value} /></div>;
+export function PracticePanel({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <section className="panel practice-panel">
+      <h2>{title}</h2>
+      {children}
+    </section>
+  );
 }

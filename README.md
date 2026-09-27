@@ -53,6 +53,8 @@ frontend/src/api, stores, types, constants, constructors, components/common, hoo
 - PracticeMode: constants/PracticeMode、types/PracticeMode、constructors、logTemplates、errorMessages、筛选器、展示组件/控制器均有引用。
 - SymbolCategory: constants/SymbolCategory、types/SymbolCategory、constructors、logTemplates、errorMessages、筛选器、展示组件/控制器均有引用。
 - MasteryLevel: constants/MasteryLevel、types/MasteryLevel、constructors、logTemplates、errorMessages、筛选器、展示组件/控制器均有引用。
+- MistakeReason（错误原因）: constants/MistakeReason、types/MistakeReason、statusText、utils/mistakeBook、mocks/seedData、MistakesPage、PracticePage、ProgressPage 均有引用。
+- MistakeGroup（待巩固/已掌握）: constants/MistakeGroup、types/MistakeGroup、statusText、MistakesPage、PracticePage、ProgressPage 均有引用；连对阈值见 constants/masteryRules，进度持久化见 api/MistakeProgress 与 stores/MistakeProgressStore。
 
 ## 为什么会牵一发动全身
 
